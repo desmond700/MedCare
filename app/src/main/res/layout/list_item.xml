@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:CircleProgressView="http://schemas.android.com/apk/res-auto"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content">
+
+  <at.grabner.circleprogress.CircleProgressView
+    android:id="@+id/circleView"
+    android:layout_width="217dp"
+    android:layout_height="217dp"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="false"
+    android:layout_marginStart="0dp"
+    android:layout_marginLeft="0dp"
+    android:layout_marginTop="0dp"
+    android:paddingLeft="?android:attr/expandableListPreferredChildPaddingLeft"
+    CircleProgressView:cpv_autoTextSize="true"
+    CircleProgressView:cpv_barColor="@color/colorPrimary"
+    CircleProgressView:cpv_barWidth="15dp"
+    CircleProgressView:cpv_innerContourSize="0dp"
+    CircleProgressView:cpv_maxValue="100"
+    CircleProgressView:cpv_outerContourSize="0dp"
+    CircleProgressView:cpv_rimColor="@color/colorPrimaryDark"
+    CircleProgressView:cpv_rimWidth="15dp"
+    CircleProgressView:cpv_roundToBlock="false"
+    CircleProgressView:cpv_showUnit="true"
+    CircleProgressView:cpv_spinColor="@color/colorPrimary"
+    CircleProgressView:cpv_text="@string/action_settings"
+    CircleProgressView:cpv_textColor="@color/colorPrimaryDark"
+    CircleProgressView:cpv_textScale="1"
+    CircleProgressView:cpv_unitColor="@color/design_default_color_primary"
+    CircleProgressView:cpv_unitPosition="right_top"
+    CircleProgressView:cpv_unitScale="1"
+    CircleProgressView:cpv_value="120" />
+
+<TextView
+  android:id="@+id/diagnostic_msg"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:layout_alignParentTop="true"
+  android:layout_alignParentEnd="true"
+  android:layout_alignParentRight="true"
+  android:layout_marginLeft="10dp"
+  android:layout_marginTop="28dp"
+  android:layout_toRightOf="@+id/circleView"
+  android:text="TextView" />
+
+</RelativeLayout>

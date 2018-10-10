@@ -1,0 +1,8 @@
+<resources>
+  <string name="app_name">MedCare</string>
+  <string name="auth_failed">Authentication failed</string>
+  <string name="facebook_app_id">550494935379552</string>
+  <string name="fb_login_protocol_scheme">fb550494935379552</string>
+  <string name="action_settings">Settings</string>
+  <string name="booklist_title">Book List</string>
+</resources>

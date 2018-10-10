@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.DrawerLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/drawer_layout"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:fitsSystemWindows="true"
+  tools:context=".PatientViewActivity">
+
+  <android.support.design.widget.CoordinatorLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <android.support.design.widget.AppBarLayout
+      android:id="@+id/app_bar_layout"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+      android:fitsSystemWindows="true">
+
+      <android.support.design.widget.CollapsingToolbarLayout
+        android:id="@+id/collapsing_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        app:contentScrim="?attr/colorPrimary"
+        app:expandedTitleMarginEnd="64dp"
+        app:expandedTitleMarginStart="48dp"
+        app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+        <include
+          layout="@layout/toolbar_info"
+          app:layout_collapseMode="parallax" />
+
+        <android.support.v7.widget.Toolbar
+          android:id="@+id/toolbar"
+          android:layout_width="match_parent"
+          android:layout_height="?attr/actionBarSize"
+          app:layout_anchor="@id/collapsing_toolbar"
+          app:layout_collapseMode="pin"
+          app:layout_scrollFlags="scroll|enterAlways|enterAlwaysCollapsed"
+          app:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+          <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Space
+              android:layout_width="@dimen/image_final_width"
+              android:layout_height="@dimen/image_final_width" />
+
+
+          </LinearLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+      </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+      android:id="@+id/scroll"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:clipToPadding="false"
+      android:fillViewport="true"
+      app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+      <include layout="@layout/expandable_list_layout" />
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+      android:id="@+id/patientImg"
+      android:layout_width="96dp"
+      android:layout_height="96dp"
+      android:layout_gravity="top|center_horizontal"
+      android:layout_marginTop="66dp"
+      android:layout_alignParentLeft="true"
+      android:layout_alignParentStart="true"
+      android:layout_centerVertical="true"
+      android:src="@drawable/com_facebook_profile_picture_blank_square"
+      app:finalHeight="@dimen/image_final_width"
+      app:finalXPosition="@dimen/spacing_smallx"
+      app:finalYPosition="@dimen/spacing_smally"
+      app:finalToolbarHeight="56dp"
+      app:layout_behavior="com.example.medcare.utilities.AvatarImageBehavior" />
+
+  </android.support.design.widget.CoordinatorLayout>
+
+  <!-- Container for contents of drawer - use NavigationView to make configuration easier -->
+  <android.support.design.widget.NavigationView
+    android:id="@+id/nav_view"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:fitsSystemWindows="true"
+    app:menu="@menu/drawer_view" />
+
+</android.support.v4.widget.DrawerLayout>

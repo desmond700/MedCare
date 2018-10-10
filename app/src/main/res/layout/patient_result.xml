@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+  <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <TextView
+      android:id="@+id/bloodPressText"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@color/browser_actions_title_color"
+      android:text="Blood Pressure"
+      android:textColor="@color/browser_actions_bg_grey" />
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/bloodPressText"
+      android:orientation="horizontal">
+
+
+    </LinearLayout>
+  </RelativeLayout>
+
+  <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+      android:id="@+id/bloodGluLvlText"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@color/browser_actions_title_color"
+      android:text="Blood Glucose Level"
+      android:textColor="@color/browser_actions_bg_grey" />
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/bloodGluLvlText"
+      android:orientation="horizontal">
+
+
+    </LinearLayout>
+  </RelativeLayout>
+
+  <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+      android:id="@+id/cholesterolText"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@color/browser_actions_title_color"
+      android:text="Cholesterol"
+      android:textColor="@color/browser_actions_bg_grey" />
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/cholesterolText"
+      android:orientation="horizontal">
+
+
+    </LinearLayout>
+  </RelativeLayout>
+
+  <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+      android:id="@+id/ekgText"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@color/browser_actions_title_color"
+      android:text="EKG"
+      android:textColor="@color/browser_actions_bg_grey" />
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/ekgText"
+      android:orientation="horizontal">
+
+
+    </LinearLayout>
+  </RelativeLayout>
+</LinearLayout>

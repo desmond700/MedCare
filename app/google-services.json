@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "881464525218",
+    "firebase_url": "https://medcare-9feda.firebaseio.com",
+    "project_id": "medcare-9feda",
+    "storage_bucket": "medcare-9feda.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:881464525218:android:afbfc55ec880be3a",
+        "android_client_info": {
+          "package_name": "com.example.medcare"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "881464525218-js7p5cvcaq0lusn1isdfpd1h8dnu8gr7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.medcare",
+            "certificate_hash": "75640195fa2a9537c13c88e79efebd4f3cfa404e"
+          }
+        },
+        {
+          "client_id": "881464525218-hmbi36bskc1lsu20sq89b8u4ukbmjagl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAyztB88XBwOXMu_NSPVzhHDAyVoSnTy6U"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "881464525218-hmbi36bskc1lsu20sq89b8u4ukbmjagl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
